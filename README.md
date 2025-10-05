@@ -39,13 +39,6 @@ My experience includes implementing CI/CD pipelines using GitLab and GitHub Acti
 - **DevOps & Tools:** Docker, Git, AWS, CI/CD pipelines
 - **Data Engineering:** Data pipelines, ETL processes, real-time analytics
 
-## **Why This Software Engineer Portfolio Stands Out**
-
-- **Technical Focus:** Showcases expertise in Data Engineering and Backend Development
-- **Real Projects:** Features actual work in data pipelines, CI/CD automation, and API development
-- **Professional Presentation:** Clean, modern design that reflects technical competence
-- **Comprehensive Skills:** Demonstrates full-stack capabilities with focus on backend systems
-
 ## **Contact**
 
 Feel free to connect with me or leave feedback. I'm always learning and improving!
