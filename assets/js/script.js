@@ -60,25 +60,3 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-//Testimonial Slider
-// $(document).ready(function () {
-//   $("#testimonial-slider").owlCarousel({
-//     items: 3,
-//     nav: true,
-//     loop: true,
-//     autoplay: true,
-//     autoplayTimeout: 3000,
-//     responsive: {
-//       0: {
-//         items: 1,
-//       },
-//       768: {
-//         items: 2,
-//       },
-//       1170: {
-//         items: 3,
-//       },
-//     },
-//   });
-// });
