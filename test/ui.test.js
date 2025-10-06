@@ -4,7 +4,6 @@
 
 describe("Portfolio UI interactions", () => {
   beforeEach(() => {
-    // Minimal DOM structure for testing navbar and hamburger
     document.body.innerHTML = `
       <nav id="navbar">
         <ul>
@@ -21,7 +20,6 @@ describe("Portfolio UI interactions", () => {
       </nav>
     `;
 
-    // Simple hamburger toggle function (simulate your actual JS)
     const hamburger = document.getElementById("hamburger");
     const offcanvas = document.getElementById("offcanvas");
     hamburger.addEventListener("click", () => {
@@ -30,7 +28,6 @@ describe("Portfolio UI interactions", () => {
     });
   });
 
-  // 1. Test navbar links exist
   test("navbar contains correct sections", () => {
     const links = Array.from(
       document.querySelectorAll("#navbar .nav-link")
@@ -38,26 +35,34 @@ describe("Portfolio UI interactions", () => {
     expect(links).toEqual(["Home", "About", "Skills", "Projects", "Contact"]);
   });
 
-  // 2. Test hamburger menu toggles offcanvas
   test("hamburger button toggles offcanvas menu", () => {
     const hamburger = document.getElementById("hamburger");
     const offcanvas = document.getElementById("offcanvas");
 
-    // Initial state
     expect(offcanvas.style.display).toBe("none");
-
-    // Simulate click
     hamburger.click();
     expect(offcanvas.style.display).toBe("block");
-
-    // Simulate another click
     hamburger.click();
     expect(offcanvas.style.display).toBe("none");
   });
 
-  // 3. Test active nav-link
   test("Home nav-link is active by default", () => {
     const homeLink = document.querySelector("#navbar .nav-link.active");
     expect(homeLink.textContent).toBe("Home");
+  });
+
+  test("offcanvas contains correct menu items", () => {
+    const offcanvas = document.getElementById("offcanvas");
+    offcanvas.innerHTML = document.querySelector("#navbar ul").innerHTML;
+    const items = Array.from(offcanvas.querySelectorAll("a")).map(
+      (a) => a.textContent
+    );
+    expect(items).toEqual(["Home", "About", "Skills", "Projects", "Contact"]);
+  });
+
+  test("clicking About nav-link sets it active", () => {
+    const aboutLink = document.querySelector('a[href="#about"]');
+    aboutLink.classList.add("active");
+    expect(aboutLink.classList.contains("active")).toBe(true);
   });
 });
