@@ -1,3 +1,12 @@
+beforeEach(() => {
+  document.body.innerHTML = `
+    <div id="about">About me</div>
+    <div id="skills">Skills</div>
+    <div id="projects">Projects</div>
+    <div id="contact">Contact</div>
+  `;
+});
+
 test("Portfolio contains About section", () => {
   document.body.innerHTML = `
         <div id="about">About me</div>

@@ -5,7 +5,9 @@ echo "Installing dependencies..."
 npm init -y      
 npm install --save-dev jest
 
-echo  "Runing  tests..."
+
+
+echo  "Runing  tests locally..."
 npm test
 
 # Navigate to your project folder
