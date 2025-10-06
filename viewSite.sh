@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo  "Runing  tests...
+
 # Navigate to your project folder
 cd ~/OneDrive/Desktop/MandlaDyonase_portfolio
 
