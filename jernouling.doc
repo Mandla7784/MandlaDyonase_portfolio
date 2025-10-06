@@ -1,0 +1,7 @@
+What I have Learned 
+Security:
+   added vercel json.
+   block you’re showing is essentially a set of 
+   HTTP security headers configured for your site, usually in a netlify.toml or
+similar hosting config. Each header tells the browser how to treat my  site securely.
+    Here’s a breakdown of why each is added: 

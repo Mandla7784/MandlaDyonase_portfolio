@@ -4,10 +4,11 @@ function setTheme(theme) {
   localStorage.setItem("theme", theme);
   var switchThemeBtn = document.getElementById("switchTheme");
   if (switchThemeBtn) {
-    switchThemeBtn.innerHTML =
-      theme === "dark"
-        ? '<i class="bi bi-sun-fill"></i>'
-        : '<i class="bi bi-moon-stars-fill"></i>';
+    var iconEl = switchThemeBtn.querySelector("i");
+    if (iconEl) {
+      iconEl.className =
+        theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+    }
   }
   //console.log(`Switched to ${theme} theme`);
 }
