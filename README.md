@@ -2,7 +2,7 @@
 
 > A modern, responsive portfolio website showcasing Mandla Dyonase's expertise in Software Engineering and Data Engineering
 
-![Developer Portfolio](Developer%20Portolio%20Website.png)
+
 
 Hi there! I'm Mandla Dyonase, a passionate Software Engineer based in Cape Town, South Africa with a background in Data Engineering. This is my portfolio website built with HTML, CSS, Bootstrap, and JavaScript. Let's dive into the features:
 
