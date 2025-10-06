@@ -1,14 +1,33 @@
 // Function to set the theme and update UI
+// function setTheme(theme) {
+//   document.body.setAttribute("data-bs-theme", theme);
+//   localStorage.setItem("theme", theme);
+//   var switchThemeBtn = document.getElementById("switchTheme");
+//   if (switchThemeBtn) {
+//     var iconEl = switchThemeBtn.querySelector("i");
+//     if (!iconEl) {
+//       iconEl = document.createElement("i");
+//       switchThemeBtn.appendChild(iconEl);
+//     }
+//     iconEl.className =
+//       theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+//     switchThemeBtn.setAttribute(
+//       "aria-label",
+//       theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+//     );
+//   }
+//   //console.log(`Switched to ${theme} theme`);
+// }
+
 function setTheme(theme) {
   document.body.setAttribute("data-bs-theme", theme);
   localStorage.setItem("theme", theme);
   var switchThemeBtn = document.getElementById("switchTheme");
   if (switchThemeBtn) {
-    var iconEl = switchThemeBtn.querySelector("i");
-    if (iconEl) {
-      iconEl.className =
-        theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
-    }
+    switchThemeBtn.innerHTML =
+      theme === "dark"
+        ? '<i class="bi bi-sun-fill"></i>'
+        : '<i class="bi bi-moon-stars-fill"></i>';
   }
   //console.log(`Switched to ${theme} theme`);
 }
