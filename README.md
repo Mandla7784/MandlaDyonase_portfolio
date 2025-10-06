@@ -10,11 +10,11 @@ Hi there! I'm Mandla Dyonase, a passionate Software Engineer based in Cape Town,
 
 ## **Portfolio Features:**
 
-- **Light/Dark Modes Supported 🌙☀️:** Switch effortlessly between light and dark themes. Your preference is saved, even after you close the page!
-- **Clean Code 👍:** Well-formatted and easy to follow.
-- **Real-World Showcase 💻:** Check out my actual projects in Data Engineering and Software Development!
-- **Optimized for Speed 🚀:** SEO metadata, prefetching, and deferring for a snappy experience.
-- **Professional Focus ✅:** Showcasing expertise in Data Engineering, Backend Development, and CI/CD automation.
+- **Light/Dark Modes Supported :** Switch effortlessly between light and dark themes. Your preference is saved, even after you close the page!
+- **Clean Code :** Well-formatted and easy to follow.
+- **Real-World Showcase :** Check out my actual projects in Data Engineering and Software Development!
+- **Optimized for Speed :** SEO metadata, prefetching, and deferring for a snappy experience.
+- **Professional Focus :** Showcasing expertise in Data Engineering, Backend Development, and CI/CD automation.
 - **SEO Optimized** Just Replace The Content at <head>
 - **And More!** See the details below.
 
