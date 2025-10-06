@@ -8,5 +8,21 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0"
-  }
+  },
+  "description": "> A modern, responsive portfolio website showcasing Mandla Dyonase's expertise in Software Engineering and Data Engineering",
+  "main": "jest.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandla7784/MandlaDyonase_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mandla7784/MandlaDyonase_portfolio/issues"
+  },
+  "homepage": "https://github.com/Mandla7784/MandlaDyonase_portfolio#readme"
 }
