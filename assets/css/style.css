@@ -3,13 +3,13 @@
 --------------------------------------------------------------*/
 
 @font-face {
-  font-family: "Agustina";
+  font-family: "Sofia Pro";
   src: url("../fonts/Agustina.woff") format("woff");
 }
 
 /* Global Variables */
 :root {
-  --font-family: "Rubik", sans-serif;
+  --font-family: "Agustina", sans-serif;
   --primary-color: #ff6b00;
   --secondary-color: #e64157;
   --tertiary-color: #12c2e9;
