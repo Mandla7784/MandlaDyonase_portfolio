@@ -20,3 +20,4 @@ NETLIFY.md
 
 # Local Netlify folder
 .netlify
+fix-netlify-deploy.bat
