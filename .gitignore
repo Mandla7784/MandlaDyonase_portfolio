@@ -17,3 +17,6 @@ package-lock.json
 NETLIFY.md
 
 
+
+# Local Netlify folder
+.netlify
