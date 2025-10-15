@@ -1,0 +1,8 @@
+# Netlify redirects file
+# This ensures all routes work properly for my portfolio
+
+# Handle client-side routing
+/*    /index.html   200
+
+# Custom redirects (if needed)
+# /old-page    /new-page    301
