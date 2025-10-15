@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  portfolio:
+    build: .
+    ports:
+      - "3000:80"
+    container_name: mandla-portfolio
+    restart: unless-stopped
+    volumes:
+      - ./assets:/usr/share/nginx/html/assets:ro
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
