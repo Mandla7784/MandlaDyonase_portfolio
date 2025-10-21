@@ -136,6 +136,15 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.logo-initials {
+  font-family: "Arial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #e64157;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .primary-bg-btn {
   color: #000;
   background-color: var(--primary-color);
