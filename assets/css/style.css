@@ -669,6 +669,210 @@ a:hover {
   margin: 0;
 }
 
+/* Skills Progress Bars */
+.skills-progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skill-progress-item {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  transition: var(--transition-default);
+}
+
+.skill-progress-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 3px 15px rgba(144, 81, 227, 0.3);
+  -webkit-box-shadow: 0 3px 15px rgba(144, 81, 227, 0.3);
+}
+
+.skill-icon-small {
+  width: 24px;
+  height: 24px;
+}
+
+.skill-icon-small-icon {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.skill-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.skill-percentage {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.skill-progress-bar {
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress-bar .progress-bar {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Timeline Styles */
+#education-experience {
+  padding: 100px 0px;
+  min-height: 100vh;
+  background-image: url(../images/grid.png);
+  background-size: contain;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--tertiary-color)
+  );
+  transform: translateX(-50%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+}
+
+.timeline-items {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+  padding-right: 60px;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  padding-left: 60px;
+  text-align: left;
+}
+
+.timeline-node {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  border: 4px solid var(--bg-color);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 107, 0, 0.6);
+  z-index: 2;
+}
+
+.timeline-item.left .timeline-node {
+  right: -12px;
+  top: 10px;
+}
+
+.timeline-item.right .timeline-node {
+  left: -12px;
+  top: 10px;
+}
+
+.timeline-card {
+  background-color: transparent;
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  transition: var(--transition-default);
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(144, 81, 227, 0.3);
+  -webkit-box-shadow: 0 5px 20px rgba(144, 81, 227, 0.3);
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.timeline-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.timeline-subtitle {
+  font-size: 16px;
+  color: var(--muted-text);
+  margin-bottom: 12px;
+}
+
+.timeline-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 30px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 70px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .timeline-item.left .timeline-node,
+  .timeline-item.right .timeline-node {
+    left: 20px !important;
+    right: auto !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Tools Section
 --------------------------------------------------------------*/
