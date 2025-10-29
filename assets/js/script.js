@@ -80,3 +80,81 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Contact Form Submission Handler
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = submitBtn.querySelector(".btn-text");
+  const formMessage = document.getElementById("form-message");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      // Disable submit button and show loading state
+      submitBtn.disabled = true;
+      btnText.textContent = "Sending...";
+      submitBtn.querySelector("i").className = "bi bi-arrow-repeat spin";
+
+      // Hide previous messages
+      formMessage.style.display = "none";
+      formMessage.className = "form-message";
+
+      // Get form data
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch("https://formspree.io/f/xldjelqg", {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          // Success
+          formMessage.className = "form-message form-message-success";
+          formMessage.innerHTML =
+            '<i class="bi bi-check-circle-fill"></i> Message sent successfully! I\'ll get back to you soon.';
+          formMessage.style.display = "block";
+
+          // Reset form
+          contactForm.reset();
+
+          // Scroll to message
+          formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        } else {
+          // Error from Formspree
+          if (data.errors) {
+            formMessage.className = "form-message form-message-error";
+            formMessage.innerHTML =
+              '<i class="bi bi-exclamation-circle-fill"></i> ' +
+              data.errors.map((error) => error.message).join(", ");
+          } else {
+            formMessage.className = "form-message form-message-error";
+            formMessage.innerHTML =
+              '<i class="bi bi-exclamation-circle-fill"></i> Something went wrong. Please try again.';
+          }
+          formMessage.style.display = "block";
+          formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      } catch (error) {
+        // Network error
+        formMessage.className = "form-message form-message-error";
+        formMessage.innerHTML =
+          '<i class="bi bi-exclamation-circle-fill"></i> Network error. Please check your connection and try again.';
+        formMessage.style.display = "block";
+        formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } finally {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        btnText.textContent = "Send Message";
+        submitBtn.querySelector("i").className = "bi bi-arrow-up-right";
+      }
+    });
+  }
+});
