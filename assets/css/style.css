@@ -746,7 +746,8 @@ a:hover {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 20px 60px 20px;
+  min-height: 800px;
 }
 
 .timeline-line {
@@ -755,6 +756,7 @@ a:hover {
   top: 0;
   bottom: 0;
   width: 8px;
+  min-height: 100%;
   background: #12c2e9;
   transform: translateX(-50%);
   border-radius: 4px;
@@ -768,8 +770,13 @@ a:hover {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   width: 50%;
+  display: block;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-item.left {
