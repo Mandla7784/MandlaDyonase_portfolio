@@ -432,8 +432,8 @@ a:hover {
 .phone-mockup-container {
   position: relative;
   width: 100%;
-  max-width: 350px;
-  height: 600px;
+  max-width: 320px;
+  height: 640px;
   margin: 0 auto;
   transform-style: preserve-3d;
   animation: rotatePhone 20s infinite linear;
@@ -441,19 +441,19 @@ a:hover {
 
 @keyframes rotatePhone {
   0% {
-    transform: rotateY(-15deg) rotateX(5deg);
+    transform: rotateY(-20deg) rotateX(8deg);
   }
   25% {
-    transform: rotateY(15deg) rotateX(-5deg);
+    transform: rotateY(20deg) rotateX(-8deg);
   }
   50% {
-    transform: rotateY(-15deg) rotateX(5deg);
+    transform: rotateY(-20deg) rotateX(8deg);
   }
   75% {
-    transform: rotateY(15deg) rotateX(-5deg);
+    transform: rotateY(20deg) rotateX(-8deg);
   }
   100% {
-    transform: rotateY(-15deg) rotateX(5deg);
+    transform: rotateY(-20deg) rotateX(8deg);
   }
 }
 
@@ -461,22 +461,23 @@ a:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
-  border-radius: 35px;
-  padding: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
-    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  background: linear-gradient(145deg, #0a0a0a, #1f1f1f, #0a0a0a);
+  border-radius: 45px;
+  padding: 8px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.8), 0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.8);
   transform-style: preserve-3d;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .phone-screen {
   width: 100%;
   height: 100%;
   background: #000;
-  border-radius: 28px;
+  border-radius: 38px;
   overflow: hidden;
   position: relative;
-  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.9);
 }
 
 .phone-content {
@@ -485,7 +486,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 28px;
+  border-radius: 38px;
   animation: contentZoom 8s ease-in-out infinite;
 }
 
@@ -501,34 +502,37 @@ a:hover {
 
 .phone-notch {
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 50%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 25px;
+  width: 140px;
+  height: 30px;
   background: #000;
-  border-radius: 0 0 18px 18px;
+  border-radius: 0 0 20px 20px;
   z-index: 10;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .phone-button {
   position: absolute;
-  width: 4px;
-  height: 50px;
-  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
-  border-radius: 2px;
+  width: 5px;
+  background: linear-gradient(180deg, #4a4a4a, #2a2a2a, #4a4a4a);
+  border-radius: 3px;
   z-index: 5;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .phone-button-left {
-  left: -6px;
-  top: 30%;
+  left: -7px;
+  top: 28%;
+  height: 55px;
 }
 
 .phone-button-right {
-  right: -6px;
-  top: 35%;
-  height: 60px;
+  right: -7px;
+  top: 38%;
+  height: 70px;
 }
 
 @media (max-width: 576px) {
@@ -543,21 +547,27 @@ a:hover {
   }
 
   .phone-mockup-container {
-    max-width: 280px;
-    height: 480px;
+    max-width: 260px;
+    height: 520px;
   }
 
   .phone-mockup {
-    border-radius: 25px;
-    padding: 8px;
+    border-radius: 35px;
+    padding: 6px;
   }
 
   .phone-screen {
-    border-radius: 20px;
+    border-radius: 32px;
   }
 
   .phone-content {
-    border-radius: 20px;
+    border-radius: 32px;
+  }
+
+  .phone-notch {
+    width: 120px;
+    height: 25px;
+    top: 6px;
   }
 
   .hero-content {
