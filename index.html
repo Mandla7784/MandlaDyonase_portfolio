@@ -757,6 +757,53 @@
         </span>
     </button>
 
+    <!-- AI Chatbot -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="chatbot-header-text">
+                        <h6 class="chatbot-title">AI Assistant</h6>
+                        <p class="chatbot-subtitle">Ask me anything!</p>
+                    </div>
+                </div>
+                <button id="chatbot-minimize" class="chatbot-minimize-btn">
+                    <i class="bi bi-dash"></i>
+                </button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="chatbot-message chatbot-message-bot">
+                    <div class="chatbot-avatar-small">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="chatbot-message-content">
+                        <p>Hello! I'm Mandla's AI assistant. How can I help you today? Feel free to ask about my projects, skills, or experience!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Type your message..." autocomplete="off">
+                <button id="chatbot-send" class="chatbot-send-btn">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </div>
+            <div id="chatbot-typing" class="chatbot-typing" style="display: none;">
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <button id="chatbot-toggle" class="chatbot-toggle">
+            <i class="bi bi-chat-dots-fill"></i>
+            <span class="chatbot-notification-badge" style="display: none;">1</span>
+        </button>
+    </div>
+
     <!-- JavaScript -->
     <script src="assets/js/aos.js" defer></script>
     <script src="assets/js/jquery-3.7.1.min.js" defer></script>
