@@ -754,11 +754,11 @@ a:hover {
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 6px;
   background: #12c2e9;
   transform: translateX(-50%);
-  border-radius: 2px;
-  box-shadow: 0 0 15px rgba(18, 194, 233, 0.7);
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(18, 194, 233, 0.8);
 }
 
 .timeline-items {
@@ -785,19 +785,19 @@ a:hover {
 
 .timeline-node {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  background: var(--tertiary-color);
-  border: 4px solid var(--bg-color);
+  width: 28px;
+  height: 28px;
+  background: #12c2e9;
+  border: 5px solid var(--bg-color);
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(18, 194, 233, 0.8), 0 0 10px rgba(18, 194, 233, 0.6);
+  box-shadow: 0 0 25px rgba(18, 194, 233, 1), 0 0 15px rgba(18, 194, 233, 0.8);
   z-index: 2;
   transition: all 0.3s ease;
 }
 
 .timeline-node:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 30px rgba(18, 194, 233, 1);
+  transform: scale(1.15);
+  box-shadow: 0 0 35px rgba(18, 194, 233, 1);
 }
 
 .timeline-item.left .timeline-node {
