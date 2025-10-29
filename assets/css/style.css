@@ -1153,12 +1153,16 @@ a:hover {
   color: var(--text-color);
 }
 
-.copyright-text .heart-icon {
-  background: var(--primary-gradient-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+.built-text {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.heart-icon {
+  margin: 0 8px;
+  font-size: 18px;
+  color: var(--primary-color);
+  display: inline-block;
 }
 
 /*--------- Back To Top ------------*/
