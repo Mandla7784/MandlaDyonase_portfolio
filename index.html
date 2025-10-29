@@ -701,7 +701,8 @@
             <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="500">
                 <div class="col-lg-8">
                     <div class="contact-form">
-                        <form action="https://formspree.io/f/xldjelqg" method="POST">
+                        <div id="form-message" class="form-message" style="display: none;"></div>
+                        <form id="contactForm" action="https://formspree.io/f/xldjelqg" method="POST">
                             <div class="row g-2">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -724,7 +725,10 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn primary-bg-btn mt-2">Send Message <i class="bi bi-arrow-up-right"></i></button>
+                                    <button type="submit" id="submitBtn" class="btn primary-bg-btn mt-2">
+                                        <span class="btn-text">Send Message</span>
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
                         </form>
